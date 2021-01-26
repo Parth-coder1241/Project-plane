@@ -56,7 +56,7 @@ function draw() {
 
 function keyPressed() {
  if (keyCode === DOWN_ARROW) {
- packageBody = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:false} );
+ Matter.Body.setStatic(packageBody,false);
   }
 }
 
